@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Klasifikasi Sarung</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container mt-5">
+
+    <div class="text-center" style="margin-bottom: 2%;">
+        <h1 style="font-weight: bold; color: #2f3966!important;"><span
+                style="font-weight: bold; color: #f08519!important;">Aplikasi</span> Klasifikasi <span
+                style="font-weight: bold; color: #f08519!important;">Sarung</span></h1>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='image/Artificial intelligence-pana.svg') }}" alt="Vector Image"
+                class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="border-radius: 2%;">
+                <div class="card-body">
+                    <div class="predict" style="padding: 10px;"> 
+                        <img src="{{ url_for('video_feed') }}" alt="Video Feed" width="100%" style="border-radius: 3%;">
+                    </div>
+                </div>
+            </div>
+            <a href="{{url_for('home')}}" class="btn text-white mt-3"
+                style="background-color: #2f3966; font-weight: 500;">Detection With Image</a>
+        </div>
+    </div>
+
+</body>
+</html>
